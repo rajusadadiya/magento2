@@ -20,7 +20,6 @@ class Index extends \Magento\Checkout\Controller\Onepage implements HttpGetActio
      */
     public function execute()
     {
-        echo "hello"; exit;
         /** @var \Magento\Checkout\Helper\Data $checkoutHelper */
         $checkoutHelper = $this->_objectManager->get(\Magento\Checkout\Helper\Data::class);
         if (!$checkoutHelper->canOnepageCheckout()) {
